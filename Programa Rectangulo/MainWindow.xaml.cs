@@ -20,9 +20,17 @@ namespace Programa_Rectangulo
     /// </summary>
     public partial class MainWindow : Window
     {
+        private Clase_Rectangulo rectan;
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void BTN_Click(object sender, RoutedEventArgs e)
+        {
+            rectan = new Clase_Rectangulo();
+            Convert.ToInt32(TXT1.Text);
+            Convert.ToInt32(TXT2.Text);
         }
     }
 }

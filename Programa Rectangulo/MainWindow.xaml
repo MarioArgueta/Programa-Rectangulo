@@ -7,6 +7,21 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center">INGRESE X</TextBlock>
+        <TextBox Name="TXT1"  Grid.Row="0" Grid.Column="1" Margin="50"></TextBox>
+        <TextBlock Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center">INGRESE Y</TextBlock>
+        <TextBox Name="TXT2" Grid.Row="1" Grid.Column="1" Margin="50"></TextBox>
+        <TextBox Name="TXT3" Grid.Row="2" Grid.Column="2" Margin="50"></TextBox>
+        <Button Name="BTN" Grid.Column="0" Grid.Row="2" Margin="50" Click="BTN_Click">CALCULAR</Button>
         
     </Grid>
 </Window>
