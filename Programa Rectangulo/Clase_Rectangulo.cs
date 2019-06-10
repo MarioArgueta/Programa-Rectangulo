@@ -16,7 +16,7 @@ namespace Programa_Rectangulo
         {
             x = 0;
             y = 0;
-            result = 2(x) + 2(y);
+            result = Convert.ToInt32(2)(x) + Convert.ToInt32(2)(y);
             result = 0;
         }
 

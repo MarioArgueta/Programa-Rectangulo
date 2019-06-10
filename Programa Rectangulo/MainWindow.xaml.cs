@@ -28,7 +28,7 @@ namespace Programa_Rectangulo
 
         private void BTN_Click(object sender, RoutedEventArgs e)
         {
-            rectan = new Clase_Rectangulo();
+            rectan = new Clase_Rectangulo { TXT1 = 1, };
             Convert.ToInt32(TXT1.Text);
             Convert.ToInt32(TXT2.Text);
         }

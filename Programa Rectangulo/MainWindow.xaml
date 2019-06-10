@@ -17,10 +17,10 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center">INGRESE X</TextBlock>
-        <TextBox Name="TXT1"  Grid.Row="0" Grid.Column="1" Margin="50"></TextBox>
+        <TextBox Name="TXT1"  Grid.Row="0" Grid.Column="1" Margin="50" Text="{Binding Path=PrimerNumero, Mode=TwoWay}"></TextBox>
         <TextBlock Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center">INGRESE Y</TextBlock>
-        <TextBox Name="TXT2" Grid.Row="1" Grid.Column="1" Margin="50"></TextBox>
-        <TextBox Name="TXT3" Grid.Row="2" Grid.Column="2" Margin="50"></TextBox>
+        <TextBox Name="TXT2" Grid.Row="1" Grid.Column="1" Margin="50" Text="{Binding Path=SegundoNumero, Mode=TwoWay}"></TextBox>
+        <TextBox Name="TXT3" Grid.Row="2" Grid.Column="2" Margin="50" Text="{Binding Path=RsultadoNumero, Mode=TwoWay}"></TextBox>
         <Button Name="BTN" Grid.Column="0" Grid.Row="2" Margin="50" Click="BTN_Click">CALCULARs</Button>
         
     </Grid>
